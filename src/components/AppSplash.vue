@@ -1,6 +1,6 @@
 <template>
-  <div class="splash">
-    <h2>Aurora Empires</h2>
+  <div class="m-auto text-center">
+    <h2 class="font-title text-4xl font-medium text-cyan-400 mb-8">Aurora Empires</h2>
     <Button lg @click="$emit('start')">Start Game</Button>
   </div>
 </template>
@@ -16,14 +16,3 @@ export default {
   emits: ['start'],
 }
 </script>
-
-<style scoped>
-.splash {
-  margin: auto;
-  text-align: center;
-}
-.splash h2 {
-  color: var(--cyan-400);
-  font-size: 5.5vmin;
-}
-</style>

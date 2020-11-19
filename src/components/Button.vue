@@ -1,5 +1,15 @@
 <template>
-  <button type="button" :class="{ lg: lg }">
+  <button
+    type="button"
+    :class="[
+      'px-3 py-1 rounded bg-transparent border border-cyan-500 text-cyan-400 transition-all cursor-pointer',
+      'hover:border-cyan-600 hover:bg-cyan-600 hover:bg-opacity-20',
+      'focus:ring focus:ring-cyan-400 focus:ring-opacity-30 focus:outline-none',
+      {
+        'text-lg px-5 py-2': lg,
+      },
+    ]"
+  >
     <slot />
   </button>
 </template>
@@ -12,24 +22,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-button {
-  cursor: pointer;
-  font-size: 1.5vmin;
-  border: 1px solid var(--cyan-500);
-  border-radius: 3px;
-  background-color: transparent;
-  color: var(--cyan-400);
-  padding: 0.5vmin 1vmin;
-  transition: all 0.2s ease-out;
-}
-button:hover {
-  background-color: var(--cyan-900);
-  border-color: var(--cyan-400);
-}
-button.lg {
-  font-size: 2vmin;
-  padding: 0.8vmin 1.5vmin;
-}
-</style>

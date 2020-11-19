@@ -1,7 +1,7 @@
 <template>
-  <div id="root">
-    <div class="toolbar">
-      <div class="display">Aurora Empires</div>
+  <div class="self-stretch justify-self-stretch flex flex-col">
+    <div class="flex bg-cyan-600 bg-opacity-20 p-2 border-b border-cyan-600">
+      <div class="font-title font-medium text-white">Aurora Empires</div>
     </div>
   </div>
 </template>
@@ -11,22 +11,3 @@ export default {
   //
 }
 </script>
-
-<style>
-#root {
-  align-self: stretch;
-  justify-self: stretch;
-
-  display: flex;
-  flex-direction: column;
-}
-.toolbar {
-  display: flex;
-  background-color: var(--cyan-900);
-  border-bottom: 1px solid var(--cyan-600);
-  padding: 0.5rem;
-}
-.toolbar .display {
-  color: #fff;
-}
-</style>
