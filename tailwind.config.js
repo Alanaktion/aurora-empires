@@ -6,8 +6,11 @@ module.exports = {
     colors: {
       gray: colors.gray,
       cyan: colors.cyan,
+      green: colors.green,
+      blue: colors.blue,
       red: colors.rose,
-      pink: colors.fuchsia,
+      pink: colors.pink,
+      orange: colors.orange,
     },
     extend: {
       fontFamily: {
